@@ -3,87 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="3; url=https://bento.me/xutiaotiao">
-    <title>正在跳转到许跳跳的主页</title>
-    <style>
-        /* 基础样式重置 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* 全屏渐变背景 */
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-            color: white;
-        }
-
-        /* 加载动画 */
-        .loader {
-            width: 50px;
-            height: 50px;
-            margin: 20px;
-            border: 3px solid rgba(255,255,255,0.3);
-            border-radius: 50%;
-            border-top-color: white;
-            animation: spin 1s ease-in-out infinite;
-        }
-
-        /* 按钮样式 */
-        .jump-btn {
-            position: relative;
-            padding: 16px 32px;
-            font-size: 18px;
-            background: rgba(255,255,255,0.1);
-            border: 2px solid white;
-            border-radius: 50px;
-            color: white;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
-            text-decoration: none;
-            margin-top: 30px;
-        }
-
-        /* 按钮悬停效果 */
-        .jump-btn:hover {
-            background: rgba(255,255,255,0.2);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        /* 按钮点击效果 */
-        .jump-btn:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        /* 文字描述 */
-        .description {
-            text-align: center;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        /* 动画定义 */
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        /* 移动端适配 */
-        @media (max-width: 480px) {
-            .jump-btn {
-                padding: 12px 24px;
-                font-size: 16px;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在跳转到 许跳跳的主页</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="loader"></div>
@@ -93,16 +15,6 @@
     </div>
     <a href="https://bento.me/xutiaotiao" class="jump-btn">立即访问</a>
 
-    <script>
-        // 倒计时动画
-        let seconds = 1;
-        const countdownElement = document.getElementById('countdown');
-        
-        const timer = setInterval(() => {
-            seconds--;
-            countdownElement.textContent = seconds;
-            if(seconds <= 0) clearInterval(timer);
-        }, 1000);
-    </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
